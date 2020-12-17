@@ -1,6 +1,6 @@
 {
   "name": "apollo-metrics",
-  "version": "0.0.0-develop",
+  "version": "1.1.0",
   "description": "",
   "types": "lib/index.d.ts",
   "main": "lib/index.js",
@@ -8,6 +8,7 @@
   "scripts": {
     "build": "rollup -c rollup.config.js",
     "lint": "prettier -c src/**/*",
+    "format": "prettier --write src/**/*",
     "test": "npm run lint",
     "semantic-release": "semantic-release",
     "prepublishOnly": "npm run build"
@@ -15,19 +16,19 @@
   "author": "dotellie",
   "license": "MIT",
   "dependencies": {
-    "apollo-server-plugin-base": "^0.6.8",
-    "apollo-tracing": "^0.8.8"
+    "apollo-server-plugin-base": "^0.10.2",
+    "apollo-tracing": "^0.12.0"
   },
   "devDependencies": {
-    "prettier": "^1.19.1",
-    "prom-client": "^11.5.3",
-    "rollup": "^1.27.8",
-    "rollup-plugin-typescript2": "^0.25.3",
-    "typescript": "^3.7.3",
-    "semantic-release": "^15.13.31"
+    "prettier": "^2.2.1",
+    "prom-client": "^12.0.0",
+    "rollup": "^2.35.1",
+    "rollup-plugin-typescript2": "^0.29.0",
+    "typescript": "^3.9.7",
+    "semantic-release": "^17.3.0"
   },
   "peerDependencies": {
-    "prom-client": "^11.5.3"
+    "prom-client": "^12.0.0"
   },
   "repository": {
     "type": "git",
